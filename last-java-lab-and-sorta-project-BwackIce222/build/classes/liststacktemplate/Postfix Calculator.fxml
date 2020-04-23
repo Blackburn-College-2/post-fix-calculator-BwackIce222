@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="liststacktemplate.PostfixCalculatorController">
+   <children>
+      <Button fx:id="btnCalc" layoutX="237.0" layoutY="200.0" mnemonicParsing="false" onAction="#btnCalculateClicked" text="Calculate" />
+      <DialogPane fx:id="dioAnswer" contentText="answer:" layoutX="158.0" layoutY="232.0" prefHeight="42.0" prefWidth="158.0" />
+      <Label fx:id="lblPrompt" layoutX="102.0" layoutY="95.0" text="Enter your postfix expression here:" />
+      <Label fx:id="lblAnsP" layoutX="264.0" layoutY="169.0" text="Answer" />
+      <Accordion />
+      <Accordion />
+      <TextField fx:id="tfInput" layoutX="102.0" layoutY="125.0" onAction="#inputChar" prefHeight="26.0" prefWidth="205.0" />
+      <Label fx:id="lblAnswer" layoutX="188.0" layoutY="290.0" prefHeight="18.0" prefWidth="127.0" />
+   </children>
+</AnchorPane>
